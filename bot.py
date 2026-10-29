@@ -34,7 +34,7 @@ PALABRAS_CLAVE = [
     "fuente de alimentacion", "ps5", "playstation", "xbox", "nintendo", "switch",
     "iphone", "ipad", "macbook", "airpods", "samsung", "galaxy", "pixel", "xiaomi",
     "smart tv", "televisor", "oled", "auriculares", "movil", "smartphone",
-    "tablet", "router", "disco duro", "monitor", "msi", "pro", "teclado", "raton", "viaje",
+    "tablet", "router", "disco duro", "msi", "teclado", "raton", "viaje",
     "escapada"
 ]
  
