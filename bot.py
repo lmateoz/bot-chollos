@@ -149,8 +149,6 @@ def leer_entradas():
  
 def pasa_filtros(e):
     titulo = normalizar(e.get("title", ""))
-    if not es_amazon(e):
-        return False
     if RE_EXCLUIR.search(titulo):
         return False
     es_error = bool(RE_ERROR.search(titulo))
