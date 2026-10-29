@@ -123,7 +123,8 @@ def enviar_alerta(mensaje):
 def formatear(e, precio, es_error):
     titulo = html.escape(e.get("title", "Sin título"))
     enlace = html.escape(e.get("link", ""), quote=True)
-    cabecera = "⚠️ <b>POSIBLE ERROR DE PRECIO</b>" if es_error else "🔥 <b>Chollo en Amazon</b>"
+    tienda = datos_tienda(e)[0] or "oferta"
+    cabecera = "⚠️ <b>POSIBLE ERROR DE PRECIO</b>" if es_error else f"🔥 <b>Chollo: {html.escape(tienda)}</b>"
     linea_precio = f"\n💶 {html.escape(precio)}" if precio else ""
     return f'{cabecera}\n\n📌 <b>{titulo}</b>{linea_precio}\n\n🔗 <a href="{enlace}">Ver oferta</a>'
  
